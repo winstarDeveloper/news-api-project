@@ -86,7 +86,7 @@ class ViewNews extends Component {
                   <div className="blog-content">
                     <div className="post-meta">
                       <Moment>{this.state.data.webPublicationDate}</Moment>
-                      <Link to={"/" + this.state.data.sectionId}>
+                      <Link to={"/section/" + this.state.data.sectionId}>
                         {this.state.data.sectionName}
                       </Link>
                     </div>

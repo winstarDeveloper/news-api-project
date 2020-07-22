@@ -131,7 +131,7 @@ class ViewTags extends Component {
                         <div className="post-content">
                           <div className="post-meta">
                             <Moment>{i.webPublicationDate}</Moment>
-                            <Link to={"/" + i.sectionId}>{i.sectionName}</Link>
+                            <Link to={"/section/" + i.sectionId}>{i.sectionName}</Link>
                           </div>
                           <Link
                             to={"/item/" + i.id.replace(/\//g, "+")}

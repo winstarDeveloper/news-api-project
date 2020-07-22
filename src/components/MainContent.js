@@ -149,7 +149,7 @@ class MainContent extends Component {
                             {this.state.latestNews[0].webPublicationDate}
                           </Moment>
 
-                          <Link to={"/" + this.state.latestNews[0].sectionId}>
+                          <Link to={"/section/" + this.state.latestNews[0].sectionId}>
                             {this.state.latestNews[0].sectionName}
                           </Link>
                         </div>
@@ -309,7 +309,7 @@ class MainContent extends Component {
                             {this.state.worldNews[0].webPublicationDate}
                           </Moment>
 
-                          <Link to={"/" + this.state.worldNews[0].sectionId}>
+                          <Link to={"/section/" + this.state.worldNews[0].sectionId}>
                             {this.state.worldNews[0].sectionName}
                           </Link>
                         </div>
@@ -357,7 +357,7 @@ class MainContent extends Component {
                             {this.state.businessNews[0].webPublicationDate}
                           </Moment>
 
-                          <Link to={"/" + this.state.businessNews[0].sectionId}>
+                          <Link to={"/section/" + this.state.businessNews[0].sectionId}>
                             {this.state.businessNews[0].sectionName}
                           </Link>
                         </div>
@@ -516,7 +516,7 @@ class MainContent extends Component {
                             {this.state.techNews[0].webPublicationDate}
                           </Moment>
 
-                          <Link to={"/" + this.state.techNews[0].sectionId}>
+                          <Link to={"/section/" + this.state.techNews[0].sectionId}>
                             {this.state.techNews[0].sectionName}
                           </Link>
                         </div>

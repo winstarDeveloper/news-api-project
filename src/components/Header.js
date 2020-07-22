@@ -93,7 +93,7 @@ class Header extends Component {
     };
 
     return (
-      <header className="header-area">
+      <header className="header-area" id="header">
         <div className="mag-main-menu" id="sticker">
           <div className="classy-nav-container breakpoint-off">
             <nav className="classy-navbar justify-content-between" id="magNav">
@@ -143,50 +143,50 @@ class Header extends Component {
                         </a>
                       </li>
                       <li>
-                        <Link to="/world" onClick={this.handleClick}>
+                        <Link to="/section/world" onClick={this.handleClick}>
                           World
                         </Link>
                       </li>
                       <li>
-                        <Link to="/politics" onClick={this.handleClick}>
+                        <Link to="/section/politics" onClick={this.handleClick}>
                           Politics
                         </Link>
                       </li>
                       <li>
-                        <Link to="/business" onClick={this.handleClick}>
+                        <Link to="/section/business" onClick={this.handleClick}>
                           Business
                         </Link>
                       </li>
                       <li>
-                        <Link to="/science" onClick={this.handleClick}>
+                        <Link to="/section/science" onClick={this.handleClick}>
                           Science
                         </Link>
                       </li>
                       <li>
-                        <Link to="/sport" onClick={this.handleClick}>
+                        <Link to="/section/sport" onClick={this.handleClick}>
                           Sports
                         </Link>
                       </li>
                       <li>
-                        <Link to="/technology" onClick={this.handleClick}>
+                        <Link to="/section/technology" onClick={this.handleClick}>
                           Tech
                         </Link>
                       </li>
                       <li>
-                        <Link to="/travel" onClick={this.handleClick}>
+                        <Link to="/section/travel" onClick={this.handleClick}>
                           Travel
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/healthcare-network"
+                          to="/section/healthcare-network"
                           onClick={this.handleClick}
                         >
                           Health
                         </Link>
                       </li>
                       <li>
-                        <a href="/">All Tags</a>
+                        <a href="#header">All Tags</a>
                         <div className="megamenu">
                           <ul className="single-mega cn-col-4">
                             {this.state.sections
@@ -195,7 +195,7 @@ class Header extends Component {
                                 return (
                                   <li key={index}>
                                     <Link
-                                      to={"/" + i.id}
+                                      to={"/section/" + i.id}
                                       onClick={this.handleClick}
                                     >
                                       {i.webTitle}
@@ -212,7 +212,7 @@ class Header extends Component {
                                 return (
                                   <li key={index}>
                                     <Link
-                                      to={"/" + i.id}
+                                      to={"/section/" + i.id}
                                       onClick={this.handleClick}
                                     >
                                       {i.webTitle}
@@ -229,7 +229,7 @@ class Header extends Component {
                                 return (
                                   <li key={index}>
                                     <Link
-                                      to={"/" + i.id}
+                                      to={"/section/" + i.id}
                                       onClick={this.handleClick}
                                     >
                                       {i.webTitle}
@@ -246,7 +246,7 @@ class Header extends Component {
                                 return (
                                   <li key={index}>
                                     <Link
-                                      to={"/" + i.id}
+                                      to={"/section/" + i.id}
                                       onClick={this.handleClick}
                                     >
                                       {i.webTitle}

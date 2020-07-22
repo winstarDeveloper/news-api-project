@@ -34,7 +34,8 @@ function App() {
 
         <Route path="/item/:itemName" render={(props) => <ViewNews id={props.match.params.itemName} /> } />
         <Route path="/tag/:tagName" render={(props) => <ViewTags tag={props.match.params.tagName} /> } />
-        <Route exact path="/:sectionName" render={(props) => <ViewSection section={props.match.params.sectionName} /> } />
+        <Route path="/section/:sectionName" render={(props) => <ViewSection section={props.match.params.sectionName} /> } />
+        <Route path="*" render={() => <div className="text-center"><h1>Error 404 , Page not found</h1></div>} />
       </Switch>
 
       <Footer />
