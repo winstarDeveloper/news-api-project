@@ -41,23 +41,23 @@ function App() {
 
       <ScriptTag
         type="text/javascript"
-        src="http://192.168.56.1:3000/js/jquery/jquery-2.2.4.min.js"
+        src="https://thirsty-colden-d551cd.netlify.app/js/jquery/jquery-2.2.4.min.js"
       />
       <ScriptTag
         type="text/javascript"
-        src="http://192.168.56.1:3000/js/bootstrap/popper.min.js"
+        src="https://thirsty-colden-d551cd.netlify.app/js/bootstrap/popper.min.js"
       />
       <ScriptTag
         type="text/javascript"
-        src="http://192.168.56.1:3000/js/bootstrap/bootstrap.min.js"
+        src="https://thirsty-colden-d551cd.netlify.app/js/bootstrap/bootstrap.min.js"
       />
       <ScriptTag
         type="text/javascript"
-        src="http://192.168.56.1:3000/js/plugins/plugins.js"
+        src="https://thirsty-colden-d551cd.netlify.app/js/plugins/plugins.js"
       />
       <ScriptTag
         type="text/javascript"
-        src="http://192.168.56.1:3000/js/active.js"
+        src="https://thirsty-colden-d551cd.netlify.app/js/active.js"
       />
     </div>
   );
