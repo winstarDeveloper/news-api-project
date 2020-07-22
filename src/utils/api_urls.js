@@ -1,5 +1,5 @@
 export const api_key = "c24dc0af-00c2-4b85-8399-3efcbf23e06f";
-export const APIUrl = "http://content.guardianapis.com/";
+export const APIUrl = "https://content.guardianapis.com/";
 export const AllSections = "http://content.guardianapis.com/sections?api-key=" + api_key;
 export const PopularNews = "https://content.guardianapis.com/search?star-rating=5&show-fields=headline,lastModified,thumbnail,byline&page-size=20&api-key=" + api_key;
 export const LatestNews = "https://content.guardianapis.com/search?order-by=newest&page-size=15&show-fields=thumbnail&api-key=" + api_key;
