@@ -20,7 +20,7 @@ class LatestNewsBanner extends Component {
       const response = await fetch(latest_news_url);
       const data = await response.json();
       await this.setState({ latestNews: data.response.results });
-      console.log("Latest: ", this.state.latestNews);
+    //   console.log("Latest: ", this.state.latestNews);
       this.setState({ loading: false });
     } catch (err) {
       this.setState({ loading: true, message: err.message });

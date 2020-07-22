@@ -24,7 +24,7 @@ class Header extends Component {
       const data = await response.json();
       this.setState({ sections: data.response.results });
       this.setState({ loading: false });
-      console.log("Sections: ", this.state.sections);
+      // console.log("Sections: ", this.state.sections);
     } catch (err) {
       this.setState({ loading: true, message: err.message });
       console.log("Error: ", err.message);
@@ -53,7 +53,7 @@ class Header extends Component {
       const data = await response.json();
       this.setState({ suggestions: data.response.results });
       this.setState({ loading: false });
-      console.log("Suggestions: ", this.state.suggestions);
+      // console.log("Suggestions: ", this.state.suggestions);
     } catch (err) {
       this.setState({ loading: true, message: err.message });
       console.log("Error: ", err.message);

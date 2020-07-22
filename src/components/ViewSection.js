@@ -42,7 +42,7 @@ class ViewSection extends Component {
       maxPages: data.response.pages,
       message: "",
     });
-    console.log("News: ", this.state.News);
+    // console.log("News: ", this.state.News);
   }
 
   async handleNext() {

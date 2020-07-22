@@ -28,13 +28,13 @@ class MainContent extends Component {
       let response = await fetch(popular_news_url);
       let data = await response.json();
       await this.setState({ popularContent: data.response.results });
-      console.log("Popular: ", this.state.popularContent);
+      // console.log("Popular: ", this.state.popularContent);
 
       const latest_news_url = URL.LatestNews;
       response = await fetch(latest_news_url);
       data = await response.json();
       await this.setState({ latestNews: data.response.results });
-      console.log("Latest: ", this.state.latestNews);
+      // console.log("Latest: ", this.state.latestNews);
 
       const world_news_url =
         URL.APIUrl +
@@ -43,7 +43,7 @@ class MainContent extends Component {
       response = await fetch(world_news_url);
       data = await response.json();
       await this.setState({ worldNews: data.response.results });
-      console.log("World: ", this.state.worldNews);
+      // console.log("World: ", this.state.worldNews);
 
       const business_news_url =
         URL.APIUrl +
@@ -52,7 +52,7 @@ class MainContent extends Component {
       response = await fetch(business_news_url);
       data = await response.json();
       await this.setState({ businessNews: data.response.results });
-      console.log("Business: ", this.state.businessNews);
+      // console.log("Business: ", this.state.businessNews);
 
       const tech_news_url =
         URL.APIUrl +
@@ -61,7 +61,7 @@ class MainContent extends Component {
       response = await fetch(tech_news_url);
       data = await response.json();
       await this.setState({ techNews: data.response.results });
-      console.log("Tech: ", this.state.techNews);
+      // console.log("Tech: ", this.state.techNews);
 
       const about_url =
         URL.APIUrl +
@@ -70,7 +70,7 @@ class MainContent extends Component {
       response = await fetch(about_url);
       data = await response.json();
       await this.setState({ about: data.response.results });
-      console.log("About: ", this.state.about);
+      // console.log("About: ", this.state.about);
 
       this.setState({ loading: false, message:'' });
     } catch (err) {

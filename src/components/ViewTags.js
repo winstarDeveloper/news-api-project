@@ -32,7 +32,7 @@ class ViewTags extends Component {
       this.state.pageNum +
       "&page-size=10&show-fields=trailText,thumbnail&api-key=" +
       URL.api_key;
-    console.log("Tag Url: ", tags_url);
+    // console.log("Tag Url: ", tags_url);
     const response = await fetch(tags_url);
     const data = await response.json();
     await this.setState({
@@ -41,7 +41,7 @@ class ViewTags extends Component {
       loading: false,
       message: "",
     });
-    console.log("Tags: ", this.state.tagData);
+    // console.log("Tags: ", this.state.tagData);
   }
 
   async componentDidMount() {

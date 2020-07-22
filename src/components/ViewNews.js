@@ -38,8 +38,8 @@ class ViewNews extends Component {
         loading: false,
         message: "",
       });
-      console.log("Data: ", this.state.data);
-      console.log(" id: ", this.state.id);
+    //   console.log("Data: ", this.state.data);
+    //   console.log(" id: ", this.state.id);
     } catch (err) {
       this.setState({ status: "fail", loading: true, message: err.message });
       console.log("Error: ", err.message);
